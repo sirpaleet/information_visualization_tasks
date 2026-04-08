@@ -24,7 +24,7 @@ def plot_data_one(file) -> None:
         cmap_colors = cmr.take_cmap_colors('cmr.arctic', 2, cmap_range=(0.2, 0.8), return_fmt='hex')    # CMasher 2 colors in hex
         fig, (ax1, ax2) = plt.subplots(1, 2)
         plt.setp(ax2.get_yticklabels(), visible=False)
-        ax1.set(xlabel='Year', ylabel='Gini index reduced')
+        ax1.set(xlabel='Year', ylabel='Gini index reduced (Finland)')
         ax2.set(xlabel='Year')
 
         # Get data:
@@ -56,7 +56,7 @@ def plot_data_one(file) -> None:
         ax1.plot(finland_yrs, non_reduced_pca, '.', color=cmap_colors[0], markeredgewidth=2)
         # ax1.legend()
         ax1.grid(linestyle='dashed', color='gainsboro')
-        ax1.set_title('Non-Standardized data of the Gini indices reduced with PCA')
+        ax1.set_title('Non-Standardized data of Gini indices (Finland) reduced with PCA')
         ax1.axes.set_ylim(-10, 10)
         ax1.set_facecolor('whitesmoke')
 
@@ -66,7 +66,7 @@ def plot_data_one(file) -> None:
         ax2.plot(finland_yrs, non_reduced_pca, '.', color=cmap_colors[1], markeredgewidth=2)
         # ax2.legend()
         ax2.grid(linestyle='dashed', color='gainsboro')
-        ax2.set_title('Standardized data of the Gini indices reduced with PCA')
+        ax2.set_title('Standardized data of Gini indices (Finland) reduced with PCA')
         ax2.axes.set_ylim(-10, 10)
         ax2.set_facecolor('whitesmoke')
 
@@ -84,7 +84,7 @@ def plot_data_two(file) -> None:
         fig, (ax1, ax2) = plt.subplots(1, 2)
         plt.setp(ax2.get_yticklabels(), visible=False)
         # plt.setp(ax2.get_xticklabels(), visible=True)
-        ax1.set(xlabel='Year', ylabel='Gini index reduced')
+        ax1.set(xlabel='Year', ylabel='Gini index reduced (Finland)')
         ax2.set(xlabel='Year')
         finland_disp = []
         finland_disp_se = []
@@ -123,7 +123,7 @@ def plot_data_three(file) -> None:
         fig, (ax1, ax2) = plt.subplots(1, 2)
         plt.setp(ax2.get_yticklabels(), visible=False)
         # plt.setp(ax2.get_xticklabels(), visible=True)
-        ax1.set(xlabel='Year', ylabel='Gini index reduced')
+        ax1.set(xlabel='Year', ylabel='Gini index reduced (Finland)')
         ax2.set(xlabel='Year')
         finland_disp = []
         finland_disp_se = []
