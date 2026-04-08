@@ -17,8 +17,6 @@ def plot_data(file) -> None:
         plt.rcParams["font.family"] = "monospace"
         plt.rcParams["font.monospace"] = ["DejaVu Sans Mono"]
         cmap_colors = cmr.take_cmap_colors('cmr.arctic', 5, cmap_range=(0.2, 0.8), return_fmt='hex')    # CMasher 5 colors in hex
-        #print(plt.rcParams["font.sans-serif"][0])
-        #print(plt.rcParams["font.monospace"][0])
         # Let's do comparisons between Nordic countries: Denmark, Finland, Iceland, Norway and Sweden
         # Each has different year data as some years might be missing
         denmark = []
@@ -61,7 +59,6 @@ def plot_data(file) -> None:
             # print(i)
             mean.append(sum(m) / len(m))
             i += 1
-        # print(len(denmark))
         plt.grid()
         plt.ylabel('Gini index disposable')
         plt.xlabel('Year')
