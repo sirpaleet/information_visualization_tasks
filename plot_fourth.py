@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
-import plotly.express as px
-import plotly.graph_objects as go
-import pandas as pd
 import numpy as np
-import seaborn as sb
 import matplotlib.pyplot as plt
 import cmasher as cmr
 import csv
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
-from sklearn.datasets import load_digits
 from sklearn.manifold import MDS, TSNE
 
 # To have less repetition a part of the following functions could be made into a helper.
